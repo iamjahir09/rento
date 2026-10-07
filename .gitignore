@@ -1,0 +1,318 @@
+# ============================================================
+# RENTO - Full Stack .gitignore
+# Django + Python + Angular + PostgreSQL + Docker
+# ============================================================
+
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Python cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+
+# Coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+
+# ============================================================
+# VIRTUAL ENVIRONMENTS
+# ============================================================
+
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+# ============================================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+
+# Secret/key files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+
+# ============================================================
+# DJANGO
+# ============================================================
+
+*.log
+
+# Local SQLite database
+db.sqlite3
+db.sqlite3-journal
+
+# Django collected static files
+staticfiles/
+
+# User uploaded media
+media/
+
+# Django cache
+.cache/
+
+
+# ============================================================
+# DJANGO MIGRATIONS
+# ============================================================
+# DO NOT ignore migrations.
+#
+# migrations/
+#
+# Django migrations should normally be committed to Git.
+
+
+# ============================================================
+# POSTGRESQL
+# ============================================================
+
+# PostgreSQL local data directories
+postgres_data/
+postgresql_data/
+
+# Common Docker PostgreSQL volume
+pgdata/
+
+# PostgreSQL backup/dump files
+*.dump
+*.sql.gz
+
+
+# ============================================================
+# NODE / ANGULAR
+# ============================================================
+
+node_modules/
+
+# Angular build output
+dist/
+
+# Angular cache
+.angular/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager caches
+.npm/
+.yarn/
+.pnpm-store/
+
+
+# ============================================================
+# ANGULAR ENVIRONMENT FILES
+# ============================================================
+
+# If Angular environment files contain secrets
+src/environments/*.local.ts
+
+# Keep example environment configuration
+!src/environments/environment.example.ts
+
+
+# ============================================================
+# BUILD / GENERATED FILES
+# ============================================================
+
+build/
+dist/
+out/
+coverage/
+
+
+# ============================================================
+# VSCODE
+# ============================================================
+
+.vscode/
+
+# Keep shared VS Code settings if you intentionally want them
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+
+# ============================================================
+# PYCHARM / INTELLIJ
+# ============================================================
+
+.idea/
+*.iml
+
+
+# ============================================================
+# JUPYTER NOTEBOOK
+# ============================================================
+
+.ipynb_checkpoints/
+
+
+# ============================================================
+# PYTHON PACKAGING
+# ============================================================
+
+*.egg
+*.egg-info/
+.eggs/
+dist/
+build/
+develop-eggs/
+
+pip-wheel-metadata/
+share/python-wheels/
+wheels/
+
+
+# ============================================================
+# DOCKER
+# ============================================================
+
+# Docker override files
+docker-compose.override.yml
+
+# Docker local volumes
+docker-volumes/
+
+# Docker secrets
+docker-secrets/
+
+# Docker environment files
+.env.docker
+
+
+# ============================================================
+# TESTING
+# ============================================================
+
+.pytest_cache/
+.coverage
+htmlcov/
+test-results/
+coverage.xml
+
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+*~
+.DS_Store
+
+
+# ============================================================
+# WINDOWS
+# ============================================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+
+# ============================================================
+# MACOS
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ============================================================
+# LINUX
+# ============================================================
+
+*~
+.directory
+
+
+# ============================================================
+# DATABASE / LOCAL DEVELOPMENT
+# ============================================================
+
+*.sqlite
+*.sqlite3
+*.sqlite3-journal
+
+# Database backups
+*.bak
+*.backup
+
+
+# ============================================================
+# IDE / EDITOR
+# ============================================================
+
+*.code-workspace
+
+
+# ============================================================
+# OS / FILESYSTEM
+# ============================================================
+
+$RECYCLE.BIN/
+.Spotlight-V100
+.Trashes
+
+
+# ============================================================
+# GENERATED DOCUMENTATION / REPORTS
+# ============================================================
+
+*.html.bak
+
+
+# ============================================================
+# LOCAL CONFIGURATION
+# ============================================================
+
+local_settings.py
+settings_local.py
+
+
+# ============================================================
+# RENTO LOCAL FILES
+# ============================================================
+
+# Local uploads
+uploads/
+
+# Local temporary files
+tmp/
+temp/
+
+# Local logs
+logs/
